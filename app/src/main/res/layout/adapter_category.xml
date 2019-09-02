@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/clcat" android:tag="layout/adapter_category_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/llcat" android:background="@drawable/bg_circle" android:layout_width="60.0dip" android:layout_height="60.0dip">
+        <ImageView android:layout_gravity="center" android:id="@id/civCat" android:layout_width="30.0dip" android:layout_height="30.0dip" />
+    </LinearLayout>
+    <com.subasta.utils.CustomTextViewBold android:textSize="10.0sp" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:id="@id/tvCat" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:text="sdsdsdsd" android:maxLines="1" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/adapter_gallery_image_slider_0" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.subasta.utils.TouchImageView android:id="@id/imageView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/dummy_img_aut" />
+    <ImageView android:id="@id/ivRemove" android:padding="10.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:src="@drawable/ic_deletegallery" android:layout_alignParentRight="true" />
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/adapter_advertise_0" android:background="@color/white" android:layout_width="200.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView android:id="@id/cardView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" app:cardBackgroundColor="@android:color/white" app:cardCornerRadius="5.0dip" app:cardElevation="5.0dip">
+        <LinearLayout android:orientation="vertical" android:id="@id/llRecomm" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/ivProduct" android:layout_width="fill_parent" android:layout_height="120.0dip" android:src="@drawable/dummy_img_aut" android:scaleType="fitXY" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+                <com.subasta.utils.CustomTextView android:textSize="14.0sp" android:textColor="@color/black" android:id="@id/tvProductname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/aucproductname" android:maxLines="1" android:layout_toLeftOf="@id/tvPrice" android:layout_alignParentLeft="true" />
+                <com.subasta.utils.CustomTextView android:textSize="14.0sp" android:textColor="@color/text_bg" android:id="@id/tvPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/price" android:layout_alignParentRight="true" />
+                <com.subasta.utils.CustomTextView android:textSize="12.0sp" android:id="@id/tvLocation" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/location" android:drawableLeft="@drawable/ic_location_small" android:drawablePadding="5.0dip" android:layout_toLeftOf="@id/tvTime" android:layout_below="@id/tvProductname" android:layout_alignParentLeft="true" />
+                <com.subasta.utils.CustomTextView android:textSize="12.0sp" android:textColor="@color/black" android:id="@id/tvTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/day_ago" android:layout_below="@id/tvProductname" android:layout_alignParentRight="true" />
+                <com.subasta.utils.CustomButton android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/btnSignIn" android:background="@drawable/button_selector" android:layout_width="160.0dip" android:layout_height="30.0dip" android:layout_marginTop="20.0dip" android:text="@string/mao" android:layout_below="@id/tvTime" android:layout_centerHorizontal="true" android:textAllCaps="false" />
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

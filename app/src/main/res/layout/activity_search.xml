@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:tag="layout/activity_search_0" android:background="@color/off_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView android:id="@id/cardView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" app:cardBackgroundColor="@android:color/white" app:cardCornerRadius="0.0dip" app:cardElevation="5.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:id="@id/ivBack" android:background="@drawable/ic_back" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="10.0dip" />
+            <android.support.v7.widget.SearchView android:gravity="center" android:id="@id/search" android:paddingLeft="5.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Search here" android:shadowColor="@color/black" android:layout_toLeftOf="@id/ivFilter" android:layout_toRightOf="@id/ivMenu" app:iconifiedByDefault="false" />
+            <com.subasta.utils.CustomTextView android:textColor="@color/gray" android:id="@id/stringName" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" " android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.RecyclerView android:id="@id/searchAuctionRecycle" android:background="@color/off_white" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/cardView" />
+    <com.subasta.utils.CustomTextViewBold android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/tvno" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="284.0dip" android:text="@string/no_data_found" android:layout_below="@id/cardView" android:layout_centerInParent="true" android:layout_centerVertical="true" android:textAlignment="center" />
+</RelativeLayout>

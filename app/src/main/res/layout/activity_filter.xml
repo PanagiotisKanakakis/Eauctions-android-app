@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/activity_filter_0" android:background="@color/off_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView android:id="@id/cardView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" app:cardBackgroundColor="@android:color/widget_edittext_dark" app:cardCornerRadius="0.0dip" app:cardElevation="5.0dip">
+        <LinearLayout android:orientation="horizontal" android:id="@id/line1" android:background="@color/white" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0">
+            <ImageView android:layout_gravity="center" android:id="@id/ivBackFilter" android:layout_width="0.0dip" android:layout_height="20.0dip" android:src="@drawable/ic_back" android:layout_weight="0.1" android:layout_centerVertical="true" />
+            <com.subasta.utils.CustomTextViewBold android:textSize="20.0sp" android:textColor="@color/black" android:layout_gravity="center" android:id="@id/tvtitle" android:background="@color/white" android:paddingLeft="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Filters" android:layout_weight="0.6" />
+            <com.subasta.utils.CustomButton android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/btn_bg" android:id="@id/clearfilter" android:background="@drawable/greyripple" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="CLEAR FILTER" android:layout_weight="0.3" android:onClick="clear" android:textAlignment="textEnd" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <ScrollView android:id="@id/scroll" android:background="@color/off_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/cardViewbottom" android:layout_below="@id/cardView">
+        <LinearLayout android:orientation="vertical" android:background="@color/off_white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="horizontal" android:background="@color/off_white" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <ImageView android:layout_gravity="center" android:background="@drawable/ic_voicemail_black_24dp" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" />
+                <com.subasta.utils.CustomTextViewBold android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/btn_bg" android:layout_gravity="center" android:id="@id/tvdis" android:background="@color/off_white" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="(Discover ads near by you)" />
+            </LinearLayout>
+            <com.xw.repo.BubbleSeekBar android:id="@id/bsbFilter" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="5.0dip" app:bsb_max="320.0" app:bsb_min="0.0" app:bsb_second_track_color="@color/bg_color" app:bsb_section_count="10"  app:bsb_show_section_text="true" app:bsb_thumb_text_size="18.0sp" app:bsb_touch_to_seek="true" />
+            <View android:background="@color/gray1" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginTop="15.0dip" />
+            <LinearLayout android:orientation="horizontal" android:background="@color/off_white" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <ImageView android:layout_gravity="center" android:background="@drawable/ic_bookmarkss" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" />
+                <com.subasta.utils.CustomTextViewBold android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/btn_bg" android:layout_gravity="center" android:id="@id/tvtitle3" android:background="@color/off_white" android:padding="10.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Categories" />
+            </LinearLayout>
+            <android.support.v7.widget.RecyclerView android:id="@id/recycleview1" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" />
+            <LinearLayout android:orientation="horizontal" android:background="@color/off_white" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                <ImageView android:layout_gravity="center" android:background="@drawable/ic_money_bag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" />
+                <com.subasta.utils.CustomTextViewBold android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/btn_bg" android:layout_gravity="center" android:id="@id/tvtitle4" android:background="@color/off_white" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Set a price range" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="@color/off_white" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                <android.support.v7.widget.CardView android:id="@id/cardView2" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:layout_weight="1.0" app:cardBackgroundColor="@color/off_white" app:cardCornerRadius="5.0dip" app:cardElevation="5.0dip">
+                    <com.subasta.utils.CustomEditText android:textColor="@color/black" android:layout_gravity="center" android:id="@id/MinPrice" android:background="@color/off_white" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="From" android:inputType="number" />
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView android:id="@id/cardView3" android:padding="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:layout_weight="1.0" app:cardBackgroundColor="@color/off_white" app:cardCornerRadius="5.0dip" app:cardElevation="5.0dip">
+                    <com.subasta.utils.CustomEditText android:textColor="@color/black" android:layout_gravity="center" android:id="@id/MaxPrice" android:background="@color/off_white" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="to" android:inputType="number" />
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <android.support.v7.widget.CardView android:layout_gravity="bottom" android:id="@id/cardViewbottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" app:cardBackgroundColor="@android:color/widget_edittext_dark" app:cardCornerRadius="0.0dip" app:cardElevation="5.0dip">
+        <com.subasta.utils.CustomButton android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/Applyfilter" android:background="@color/btn_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="APPLY FILTER" />
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:id="@id/cardClick" android:tag="layout/adapter_history_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.subasta.utils.CustomTextViewBold android:textSize="16.0sp" android:textColor="@color/bg_color" android:id="@id/pkgName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/pkgname" android:drawableLeft="@drawable/orange_buy" android:drawablePadding="10.0dip" android:layout_weight="1.0" />
+                <com.subasta.utils.CustomTextView android:textSize="16.0sp" android:textColor="@color/bg_color" android:gravity="end" android:id="@id/totalPrice" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="total price" />
+            </LinearLayout>
+            <View android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <LinearLayout android:orientation="horizontal" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:layout_gravity="center" android:id="@id/dis" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_discount" />
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <com.subasta.utils.CustomTextViewBold android:textColor="@color/bg_color" android:id="@id/distitle" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Discount" />
+                    <com.subasta.utils.CustomTextView android:textColor="@color/black" android:id="@id/discount" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="discount" android:layout_weight="1.0" />
+                </LinearLayout>
+                <ImageView android:layout_gravity="center" android:id="@id/tax1" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_tax11" android:text="Tax :" />
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <com.subasta.utils.CustomTextViewBold android:textColor="@color/bg_color" android:id="@id/taxtitle" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tax" />
+                    <com.subasta.utils.CustomTextView android:textColor="@color/black" android:id="@id/tax" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="tax" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/gray_light" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+            <LinearLayout android:orientation="horizontal" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_calendar" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.subasta.utils.CustomTextViewBold android:textColor="@color/bg_color" android:id="@id/validaty" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Aution validity" />
+                    <com.subasta.utils.CustomTextView android:textColor="@color/black" android:id="@id/date" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="date" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

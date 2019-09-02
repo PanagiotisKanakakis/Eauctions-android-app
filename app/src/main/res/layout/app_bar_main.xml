@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:background="@color/off_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.design.widget.AppBarLayout android:theme="@style/AppTheme.AppBarOverlay" android:id="@id/appbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize">
+        <include android:id="@id/action_bar" layout="@layout/actionbar_header_nav" />
+    </android.support.design.widget.AppBarLayout>
+    <FrameLayout android:id="@id/frame" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="50.0dip" />
+</android.support.constraint.ConstraintLayout>

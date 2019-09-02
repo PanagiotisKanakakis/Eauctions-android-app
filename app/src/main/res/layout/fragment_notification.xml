@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout android:id="@id/swipe_refresh_layout" android:tag="layout/fragment_notification_0" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/off_white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:orientation="vertical" android:id="@id/relative" android:background="@color/off_white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+            <ImageView android:id="@id/notification" android:background="@drawable/ic_disable_alarm" android:visibility="visible" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_margin="10.0dip" android:layout_centerInParent="true" android:layout_centerHorizontal="true" />
+            <com.subasta.utils.CustomTextViewBold android:textSize="20.0sp" android:textColor="@color/black" android:id="@id/noNotification" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/no_notification" android:layout_below="@id/notification" android:textAlignment="center" />
+        </RelativeLayout>
+        <android.support.v7.widget.RecyclerView android:id="@id/recycleview1" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="10.0dip" />
+    </RelativeLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

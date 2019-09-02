@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/fregment_my_auction_0" android:background="@color/off_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardElevation="5.0dip">
+        <LinearLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/llmyauction" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.33" android:onClick="onClick">
+                <com.subasta.utils.CustomTextViewBold android:textSize="14.0sp" android:gravity="center" android:id="@id/tvmyauction" android:background="@drawable/greyripple" android:layout_width="fill_parent" android:layout_height="60.0dip" android:text="@string/my_auction" />
+                <com.subasta.utils.CustomTextView android:id="@id/tvAuctionSelect" android:background="@color/tab_line" android:layout_width="fill_parent" android:layout_height="4.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/llmybids" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.33" android:onClick="onClick">
+                <com.subasta.utils.CustomTextViewBold android:textSize="14.0sp" android:gravity="center" android:id="@id/tvmybids" android:background="@drawable/greyripple" android:layout_width="fill_parent" android:layout_height="60.0dip" android:text="@string/my_bids" />
+                <com.subasta.utils.CustomTextView android:id="@id/tvBidsSelect" android:background="@color/tab_line" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="4.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/llmyfavourites" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.33" android:onClick="onClick">
+                <com.subasta.utils.CustomTextViewBold android:textSize="14.0sp" android:gravity="center" android:id="@id/tvFavourites" android:background="@drawable/greyripple" android:layout_width="fill_parent" android:layout_height="60.0dip" android:text="@string/favourites" />
+                <com.subasta.utils.CustomTextView android:id="@id/tvFavouritesSelect" android:background="@color/tab_line" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="4.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/llmywonbids" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.33" android:onClick="onClick">
+                <com.subasta.utils.CustomTextViewBold android:textSize="14.0sp" android:gravity="center" android:id="@id/tvwonbids" android:background="@drawable/greyripple" android:layout_width="fill_parent" android:layout_height="60.0dip" android:text="@string/won_bids" />
+                <com.subasta.utils.CustomTextView android:id="@id/tvwonBidsSelect" android:background="@color/tab_line" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="4.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <FrameLayout android:id="@id/container" android:background="@color/off_white" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="category_arrays">
+        <item>Furnitures</item>
+        <item>Electronics</item>
+        <item>Books</item>
+        <item>Fashion</item>
+        <item>Bikes</item>
+        <item>Cars</item>
+    </string-array>
+    <string-array name="sub_brands">
+        <item>Vivo</item>
+        <item>Asus</item>
+        <item>Samsung</item>
+        <item>Oppo</item>
+        <item>Redmi</item>
+        <item>Lenovo</item>
+    </string-array>
+    <string-array name="sub_category">
+        <item>Mobile Acessories</item>
+        <item>Tablet</item>
+        <item>Mobiles</item>
+    </string-array>
+    <string-array name="sub_model">
+        <item>mi 5a</item>
+        <item>mi 6a</item>
+        <item>mi note 4</item>
+        <item>mi note 5</item>
+        <item>mi 6</item>
+        <item>mi note 5 pro</item>
+    </string-array>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/llchat1" android:tag="layout/fragment_my_chat_0" android:background="@color/off_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView android:id="@id/cardView1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:layout_below="@id/cardView" app:cardBackgroundColor="@android:color/white" app:cardCornerRadius="5.0dip" app:cardElevation="5.0dip">
+        <android.support.v7.widget.SearchView android:id="@id/chatSearch" android:background="@drawable/ripplecard" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textAlignment="textStart" app:defaultQueryHint="@string/searchhere" app:iconifiedByDefault="false" />
+    </android.support.v7.widget.CardView>
+    <android.support.v4.widget.SwipeRefreshLayout android:id="@id/swipe_refresh_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_below="@id/cardView1">
+        <android.support.v7.widget.RecyclerView android:id="@id/recycle1" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <com.subasta.utils.CustomTextViewBold android:textSize="20.0sp" android:textColor="@color/colorPrimary" android:id="@id/tvNo" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/no_chat_found" android:layout_centerInParent="true" android:textAlignment="center" />
+</RelativeLayout>

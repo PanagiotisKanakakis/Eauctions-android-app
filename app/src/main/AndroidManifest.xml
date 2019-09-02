@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.subasta">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+    <supports-screens android:anyDensity="true" android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" android:resizeable="true" android:xlargeScreens="true"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-feature android:glEsVersion="20000" android:required="true"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <application android:theme="@style/AppTheme" android:label="@string/app_name" android:icon="@mipmap/ic_launcher" android:allowBackup="true" android:supportsRtl="true" android:usesCleartextTraffic="true" android:roundIcon="@mipmap/ic_launcher_round"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:targetApi="m">
+        <activity android:name="com.subasta.activity.social.AllSubscriptionHistory" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.subasta.activity.aution.ViewBidAuntion" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.subasta.activity.aution.GetAllRating" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <!--<provider android:name="androidx.core.content.FileProvider" android:exported="false" android:authorities="com.subasta.fileprovider" android:grantUriPermissions="true">-->
+            <!--<meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/filepaths"/>-->
+        <!--</provider>-->
+        <activity android:name="com.subasta.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.subasta.activity.FilterActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.subasta.activity.authentication.UpdateProfile" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.subasta.activity.MyBidsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.subasta.activity.aution.ViewProfileActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.subasta.activity.SupportAcitivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.subasta.activity.advertise.AdvertiseImages" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.subasta.activity.advertise.AllAdvertise" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.subasta.activity.advertise.ViewAdvertise" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.subasta.activity.aution.AutionAll" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.subasta.activity.aution.AutionFavourites" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.subasta.activity.aution.AutionImages" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.subasta.activity.aution.ViewMyAunction" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.subasta.activity.aution.GalleryActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.subasta.activity.categories.CategoryList" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.subasta.activity.SearchActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.subasta.activity.authentication.Sign_Up" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.subasta.activity.authentication.Sign_in" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.subasta.activity.authentication.ChangPassword" android:screenOrientation="portrait"/>
+        <activity android:name="com.subasta.utils.MainFragment" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.subasta.activity.dashbord.Dashboard" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.subasta.activity.aution.AddAuction" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.subasta.activity.aution.ViewAuction" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.subasta.activity.aution.PostSubAunction" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.subasta.activity.ChatstalkingActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.subasta.activity.aution.PostAuction" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.subasta.activity.CategoryBasedAdsAuction" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:theme="@style/MultipleImageSelectTheme" android:label="@string/app_name" android:name="com.darsh.multipleimageselect.activities.AlbumSelectActivity" android:configChanges="orientation|screenSize">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <!--<activity android:theme="@style/AppTheme.Map" android:label="@string/leku_title_activity_location_picker" android:name="com.schibstedspain.leku.LocationPickerActivity" android:windowSoftInputMode="adjustPan" android:parentActivityName="com.subasta.activity.authentication.UpdateProfile">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.SEARCH"/>-->
+            <!--</intent-filter>-->
+            <!--<meta-data android:name="android.app.searchable" android:resource="@xml/leku_searchable"/>-->
+            <!--<meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".activity.authentication.UpdateProfile"/>-->
+        <!--</activity>-->
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyAcAwt5FwC6PAh-wM55YAZXLiFhN-P5vw4"/>
+        <!--<service android:name="com.subasta.firebase.MyFirebaseMessagingService" android:exported="false">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="com.google.firebase.MESSAGING_EVENT"/>-->
+            <!--</intent-filter>-->
+        <!--</service>-->
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <!--<activity android:theme="@style/Theme.Translucent.NoTitleBar" android:label="@string/app_name" android:name="com.facebook.FacebookActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>-->
+        <!--<provider android:name="com.facebook.FacebookContentProvider" android:exported="true" android:authorities="com.facebook.app.FacebookContentProvider596028327096505"/>-->
+        <!--<service android:name="com.google.firebase.messaging.FirebaseMessagingService" android:exported="false">-->
+            <!--<intent-filter android:priority="-500">-->
+                <!--<action android:name="com.google.firebase.MESSAGING_EVENT"/>-->
+            <!--</intent-filter>-->
+        <!--</service>-->
+        <service android:name="net.gotev.uploadservice.UploadService" android:enabled="true" android:exported="true"/>
+        <!--<activity android:theme="@style/PlacesAutocompleteThemeOverlay" android:label="@string/places_autocomplete_label" android:name="com.google.android.libraries.places.widget.AutocompleteActivity" android:exported="false" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateVisible|stateAlwaysVisible|adjustPan" android:hardwareAccelerated="true"/>-->
+        <activity android:theme="@style/MultipleImageSelectTheme" android:label="@string/app_name" android:name="com.darsh.multipleimageselect.activities.ImageSelectActivity" android:configChanges="orientation|screenSize">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <!--<activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:exported="false" android:excludeFromRecents="true"/>-->
+        <!--<service android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:exported="true"/>-->
+        <!--<service android:name="com.google.firebase.components.ComponentDiscoveryService" android:exported="false">-->
+            <!--<meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>-->
+            <!--<meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>-->
+        <!--</service>-->
+        <!--<receiver android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND" android:exported="true">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="com.google.android.c2dm.intent.RECEIVE"/>-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
+        <!--<provider android:name="com.google.firebase.provider.FirebaseInitProvider" android:exported="false" android:authorities="com.subasta.firebaseinitprovider" android:initOrder="100"/>-->
+        <!--<activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false"/>-->
+        <!--<receiver android:name="com.google.android.gms.measurement.AppMeasurementReceiver" android:enabled="true" android:exported="false"/>-->
+        <!--<receiver android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" android:permission="android.permission.INSTALL_PACKAGES" android:enabled="true" android:exported="true">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="com.android.vending.INSTALL_REFERRER"/>-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
+        <!--<service android:name="com.google.android.gms.measurement.AppMeasurementService" android:enabled="true" android:exported="false"/>-->
+        <!--<service android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="true" android:exported="false"/>-->
+        <!--<meta-data android:name="com.android.vending.derived.apk.id" android:value="1"/>-->
+    </application>
+</manifest>

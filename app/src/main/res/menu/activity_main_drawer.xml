@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:icon="@drawable/ic_home" android:id="@id/nav_browse" android:title="@string/nav_browse" />
+        <item android:icon="@drawable/ic_chat" android:id="@id/nav_chats" android:title="@string/nav_chats" />
+        <item android:icon="@drawable/ic_ads" android:id="@id/nav_myads" android:visible="false" android:title="@string/nav_myads" />
+        <item android:icon="@drawable/ic_auctions" android:id="@id/nav_myauction" android:title="@string/nav_myauction" />
+        <item android:icon="@drawable/ic_add_alert_black_24dp" android:id="@id/nav_notification" android:title="@string/nav_notifications" />
+        <item android:icon="@drawable/ic_subscription" android:id="@id/nav_subcription" android:title="@string/nav_subscription_history" />
+        <item android:icon="@drawable/ic_settings" android:id="@id/nav_setting" android:title="@string/nav_settings" />
+        <item>
+            <item android:icon="@drawable/ic_logout" android:id="@id/nav_logout" android:title="@string/nav_logout" />
+        </item>
+    </group>
+</menu>

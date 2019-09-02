@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:orientation="vertical" android:tag="layout/activity_profile_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/iActProfile" android:background="@color/bg_color" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/profileback" android:clickable="true" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/ic_back_white" android:layout_weight="1.0" android:onClick="onClick" />
+        <com.subasta.utils.CustomTextView android:textSize="30.0sp" android:textColor="@color/white" android:gravity="center_horizontal" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="50.0dip" android:text="@string/profile" android:layout_weight="10.51" />
+        <ImageView android:layout_gravity="center" android:id="@id/profilenotification" android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/ic_notification_blank" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/llProfile" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_marginTop="10.0dip">
+        <de.hdodenhof.circleimageview.CircleImageView android:id="@id/civProfile" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_marginTop="50.0dip" android:src="@color/grey" app:layout_constraintTop_toBottomOf="@id/iActProfile" />
+        <com.subasta.utils.CustomEditText android:textSize="25.0sp" android:layout_gravity="bottom" android:id="@id/ctvName" android:layout_width="214.0dip" android:layout_height="50.0dip" android:hint="@string/full_name" android:editable="true" android:layout_marginStart="36.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="503.0dip" app:layout_constraintTop_toBottomOf="@id/llProfile">
+        <com.subasta.utils.CustomTextView android:textSize="25.0sp" android:textStyle="bold" android:id="@id/ctvContact" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_margin="20.0dip" android:layout_marginTop="44.0dip" android:text="@string/contact" app:layout_constraintTop_toBottomOf="@id/llProfile" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="20.0dip" app:layout_constraintTop_toBottomOf="@id/ctvContact">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_email_black_24dp" />
+            <com.subasta.utils.CustomTextView android:textSize="24.0sp" android:id="@id/etEmail" android:layout_width="150.0dip" android:layout_height="30.0dip" android:layout_marginLeft="30.0dip" android:text="@string/email" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="20.0dip" app:layout_constraintTop_toBottomOf="@id/ctvContact">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_phone_black_24dp" />
+            <com.subasta.utils.CustomTextView android:textSize="24.0sp" android:layout_width="150.0dip" android:layout_height="30.0dip" android:layout_marginLeft="30.0dip" android:text="@string/phone" android:inputType="number" />
+        </LinearLayout>
+        <com.subasta.utils.CustomEditText android:id="@id/cetPhoneno" android:layout_width="290.0dip" android:layout_height="40.0dip" android:layout_marginLeft="52.0dip" android:editable="true" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="20.0dip" app:layout_constraintTop_toBottomOf="@id/cetPhoneno">
+            <ImageView android:id="@id/imageView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_location_black" />
+            <com.subasta.utils.CustomTextView android:textSize="24.0sp" android:layout_width="150.0dip" android:layout_height="30.0dip" android:layout_marginLeft="30.0dip" android:text="@string/address" />
+        </LinearLayout>
+        <com.subasta.utils.CustomEditText android:id="@id/cetAddress" android:layout_width="290.0dip" android:layout_height="40.0dip" android:layout_marginLeft="52.0dip" android:editable="true" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="20.0dip" app:layout_constraintTop_toBottomOf="@id/cetAddress">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_gender" app:layout_constraintEnd_toStartOf="@id/ctvGender" />
+            <com.subasta.utils.CustomTextView android:textSize="24.0sp" android:id="@id/ctvGender" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginLeft="30.0dip" android:text="@string/gender" />
+        </LinearLayout>
+        <RadioGroup android:orientation="horizontal" android:id="@id/radioGroup" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginRight="40.0dip" android:editable="true">
+            <RadioButton android:textSize="18.0sp" android:id="@id/male" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/male" android:editable="true" />
+            <RadioButton android:textSize="18.0sp" android:id="@id/female" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:text="@string/female" android:editable="true" />
+        </RadioGroup>
+        <com.subasta.utils.CustomButton android:textSize="20.0dip" android:textColor="@color/white" android:layout_gravity="bottom" android:id="@id/btnsubmitdata" android:background="@drawable/button_selector" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_marginTop="100.0dip" android:text="@string/submit" android:onClick="onClick" app:layout_constraintTop_toBottomOf="@id/radioGroup" style="@style/Base.CardView" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

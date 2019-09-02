@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:id="@id/cardView" android:tag="layout/adapter_supprt_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" app:cardCornerRadius="5.0dip" app:cardElevation="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.subasta.utils.CustomTextViewBold android:textSize="14.0sp" android:textColor="@color/black" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/support1" android:layout_weight="1.0" />
+            <com.subasta.utils.CustomTextViewBold android:textSize="12.0sp" android:gravity="end" android:id="@id/tvTime" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/time1" android:layout_weight="1.0" />
+        </LinearLayout>
+        <com.subasta.utils.CustomTextView android:textSize="14.0sp" android:id="@id/tvDescription" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/time1" />
+        <com.subasta.utils.CustomTextViewBold android:textSize="14.0sp" android:textColor="@color/bg_color" android:gravity="end" android:id="@id/tvStatus" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/time1" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

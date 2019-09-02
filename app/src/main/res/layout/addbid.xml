@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.subasta.utils.CustomEditText android:textColor="@color/black" android:id="@id/editBidPrice" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="20.0dip" android:hint="enter your bid price" />
+    <com.subasta.utils.CustomButton android:textColor="@color/black" android:id="@id/submit" android:background="@drawable/button_gmailrounded" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="20.0dip" android:layout_marginTop="10.0dip" android:text="submit" android:layout_below="@id/editBidPrice" />
+</RelativeLayout>

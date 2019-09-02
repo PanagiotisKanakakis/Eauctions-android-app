@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:id="@id/cardView1" android:tag="layout/adapter_notification_0" android:background="@color/grey" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" app:cardCornerRadius="5.0dip" app:cardElevation="5.0dip" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout" android:background="@drawable/ripplecard" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <ImageView android:id="@id/image" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/ic_notification" android:scaleType="fitXY" android:layout_alignParentLeft="true" />
+        <com.subasta.utils.CustomTextViewBold android:textSize="16.0sp" android:textColor="#ff000000" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:text="Testing" android:layout_toRightOf="@id/image" android:layout_centerHorizontal="true" />
+        <com.subasta.utils.CustomTextView android:textSize="14.0sp" android:textColor="#ff000000" android:id="@id/message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="Testing is awecome" android:layout_toRightOf="@id/image" android:layout_below="@id/title" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

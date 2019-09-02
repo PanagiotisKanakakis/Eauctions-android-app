@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/relSubCat" android:tag="layout/adapter_sub_category_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.subasta.utils.CustomTextView android:textSize="16.0sp" android:id="@id/tvtitle" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="car" />
+    <View android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/tvtitle" />
+</RelativeLayout>

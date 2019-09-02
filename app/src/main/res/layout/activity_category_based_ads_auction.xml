@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:tag="layout/activity_category_based_ads_auction_0" android:background="@color/off_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:fab="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/iAHN" layout="@layout/actionbar_header_nav" />
+    <LinearLayout android:orientation="vertical" android:background="@color/off_white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="60.0dip" fab:layout_constraintTop_toBottomOf="@id/iAHN">
+        <RelativeLayout android:id="@id/rlAllAuc" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/llAuct" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <RelativeLayout android:id="@id/rlAuc" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="30.0dip" android:layout_toLeftOf="@id/btn_ViewAllAuc">
+                        <com.subasta.utils.CustomTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/auction" android:fontFamily="@font/lato_black" />
+                        <View android:layout_gravity="center" android:background="@color/gray" android:layout_width="120.0dip" android:layout_height="1.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="1.0dip" android:layout_weight="1.0" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <android.support.v7.widget.CardView android:id="@id/cardView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" fab:cardBackgroundColor="@android:color/white" fab:cardCornerRadius="5.0dip" fab:cardElevation="5.0dip">
+                    <android.support.v7.widget.SearchView android:id="@id/chatSearch" android:background="@drawable/ripplecard" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textAlignment="textStart" fab:defaultQueryHint="@string/searchhere" fab:iconifiedByDefault="false" />
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.RecyclerView android:id="@id/rvAuction" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="5.0dip" />
+                <com.subasta.utils.CustomTextView android:layout_gravity="center" android:id="@id/ftv_NoAuction" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20.0dip" android:fontFamily="@font/lato_black" />
+            </LinearLayout>
+            <com.subasta.utils.CustomTextView android:textColor="#ffff5335" android:id="@id/tvViewMore" android:visibility="gone" android:layout_width="80.0dip" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:text="@string/ViewMore" android:drawableRight="@drawable/ic_arrow" android:layout_below="@id/llAuct" android:layout_alignParentRight="true" />
+            <View android:layout_gravity="right" android:id="@id/myview" android:background="@color/txt_bg" android:visibility="gone" android:layout_width="80.0dip" android:layout_height="1.0dip" android:layout_marginRight="20.0dip" android:layout_below="@id/tvViewMore" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <com.github.clans.fab.FloatingActionButton android:id="@id/fab_PostAuctionCat" android:padding="10.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:src="@drawable/ic_bid_black" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" fab:elevation="4.0dip" fab:fab_colorNormal="@color/btn_bg" fab:fab_label="@string/postauction" fab:layout_constraintBottom_toBottomOf="parent" fab:layout_constraintRight_toRightOf="parent" fab:menu_colorPressed="@color/grey" />
+    <com.subasta.utils.CustomTextViewBold android:textSize="20.0sp" android:textColor="@color/black" android:id="@id/tvNo" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_data_found" fab:layout_constraintBottom_toBottomOf="parent" fab:layout_constraintLeft_toLeftOf="parent" fab:layout_constraintRight_toRightOf="parent" fab:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>
